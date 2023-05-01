@@ -50,7 +50,11 @@ public class Spawner : MonoBehaviour
 	{
 		if(useCooldown)
 		{
+<<<<<<< HEAD
 			nextTimeSpawn = Time.time + spawnCooldown;
+=======
+			nextTimeSpawn = spawnCooldown;
+>>>>>>> 37005662f71bdd2aced01a8b1c397c3ba93390f9
 		}	
 	}
 	private void Start ()

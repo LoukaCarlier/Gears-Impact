@@ -58,7 +58,11 @@ public class JumperEditor : Editor
 
 		jumpFX = serializedObject.FindProperty("jumpFX");
 		airJumpFX = serializedObject.FindProperty("airJumpFX");
+<<<<<<< HEAD
 		FXOffset = serializedObject.FindProperty("fxOffset");
+=======
+		FXOffset = serializedObject.FindProperty("FXOffset");
+>>>>>>> 37005662f71bdd2aced01a8b1c397c3ba93390f9
 		timeBeforeDestroyFX = serializedObject.FindProperty("timeBeforeDestroyFX");
 
 		animator = serializedObject.FindProperty("animator");
@@ -83,14 +87,22 @@ public class JumperEditor : Editor
 			toolBarTab = GUILayout.Toolbar(toolBarTab, new string[] { "Jump", "Air Jump", "Collision", "FX", "Animation" }, GUILayout.MinHeight(25));
 			if (displayDebugInfo.boolValue)
 			{
+<<<<<<< HEAD
 				if (GUILayout.Button("Debug ON", UIHelper.greenButtonStyle, GUILayout.MaxHeight(25f)))
+=======
+				if (GUILayout.Button("Debug ON", UIHelper.greenButtonStyle, GUILayout.MaxHeight(20f)))
+>>>>>>> 37005662f71bdd2aced01a8b1c397c3ba93390f9
 				{
 					displayDebugInfo.boolValue = !displayDebugInfo.boolValue;
 				}
 			}
 			else
 			{
+<<<<<<< HEAD
 				if (GUILayout.Button("Debug OFF", UIHelper.redButtonStyle, GUILayout.MaxHeight(25f)))
+=======
+				if (GUILayout.Button("Debug OFF", UIHelper.redButtonStyle, GUILayout.MaxHeight(20f)))
+>>>>>>> 37005662f71bdd2aced01a8b1c397c3ba93390f9
 				{
 					displayDebugInfo.boolValue = !displayDebugInfo.boolValue;
 				}

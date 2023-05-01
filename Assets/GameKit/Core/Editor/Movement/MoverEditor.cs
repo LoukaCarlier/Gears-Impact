@@ -149,7 +149,11 @@ public class MoverEditor : Editor
 
 		EditorGUILayout.BeginVertical(UIHelper.mainStyle);
 		{
+<<<<<<< HEAD
 			toolBarTab = GUILayout.Toolbar(toolBarTab, new string[] { "Axis Constraints", "Input", "Movement", "Animation" }, GUILayout.MinHeight(25));
+=======
+			toolBarTab = GUILayout.Toolbar(toolBarTab, new string[] { "Axis Constraints", "Input", "Movement", "Animation" });
+>>>>>>> 37005662f71bdd2aced01a8b1c397c3ba93390f9
 
 			currentTab = toolBarTab switch
 			{

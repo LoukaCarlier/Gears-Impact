@@ -49,6 +49,11 @@ public class WallJump : MonoBehaviour
 	public GameObject jumpFX = null;
 	[Tooltip("FX Spawn Anchor (Usually set as children of the player, in front of the GameObject")]
 	public Transform jumpFXSpawnPoint = null;
+<<<<<<< HEAD
+=======
+	[Tooltip("Offset from the pivot when Instantiating FX")]
+	[SerializeField] private Vector3 fxOffset = Vector3.zero;
+>>>>>>> 37005662f71bdd2aced01a8b1c397c3ba93390f9
 	[Tooltip("Lifetime of the Instantiated FX. 0 = Do not destroy")]
 	[SerializeField] private float timeBeforeDestroyFX = 3f;
 
@@ -60,7 +65,10 @@ public class WallJump : MonoBehaviour
 
 	private Rigidbody rigid;
 	public int inputChoiceIndex;
+<<<<<<< HEAD
     [SerializeField] private bool displayDebugInfo;
+=======
+>>>>>>> 37005662f71bdd2aced01a8b1c397c3ba93390f9
 
 	private void Update ()
 	{
@@ -77,8 +85,11 @@ public class WallJump : MonoBehaviour
 
 	private void OnDrawGizmosSelected ()
 	{
+<<<<<<< HEAD
 		if (!displayDebugInfo) return;
 
+=======
+>>>>>>> 37005662f71bdd2aced01a8b1c397c3ba93390f9
 		Transform transform1 = transform;
 		Vector3 position = transform1.position;
 		Gizmos.color = Physics.CheckBox(position + transform.TransformDirection(collisionOffset), halfExtents, transform1.rotation, wallJumpLayerMask, QueryTriggerInteraction.Ignore)

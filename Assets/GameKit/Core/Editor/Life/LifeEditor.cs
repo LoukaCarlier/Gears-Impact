@@ -163,4 +163,8 @@ public class LifeEditor : Editor
 			serializedObject.ApplyModifiedProperties();
 		}
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 37005662f71bdd2aced01a8b1c397c3ba93390f9

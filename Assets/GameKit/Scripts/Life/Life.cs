@@ -69,10 +69,17 @@ public class Life : MonoBehaviour
 				}
 
 				currentLife += lifeMod;
+<<<<<<< HEAD
 				invTimer = 0f;
 
 				onDamageTaken.Invoke();
 				lifeChangeDelegate?.Invoke();
+=======
+				lifeChangeDelegate?.Invoke();
+				onDamageTaken.Invoke();
+
+				invTimer = 0f;
+>>>>>>> 37005662f71bdd2aced01a8b1c397c3ba93390f9
 			}
 		}
 		else

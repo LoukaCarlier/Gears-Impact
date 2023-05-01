@@ -7,7 +7,10 @@ public class WallJumpEditor : Editor
 	private int toolBarTab;
 	private string currentTab;
 	
+<<<<<<< HEAD
 	private SerializedProperty displayDebugInfo;
+=======
+>>>>>>> 37005662f71bdd2aced01a8b1c397c3ba93390f9
 	private SerializedProperty wallJumpForce;
 	private SerializedProperty wallJumpLayerMask;
 	private SerializedProperty invertLookDirectionOnWallJump;
@@ -37,8 +40,11 @@ public class WallJumpEditor : Editor
 	
 	private void OnEnable ()
 	{
+<<<<<<< HEAD
         displayDebugInfo = serializedObject.FindProperty("displayDebugInfo");
 
+=======
+>>>>>>> 37005662f71bdd2aced01a8b1c397c3ba93390f9
 		wallJumpForce = serializedObject.FindProperty("wallJumpForce");
 		wallJumpLayerMask = serializedObject.FindProperty("wallJumpLayerMask");
 		invertLookDirectionOnWallJump = serializedObject.FindProperty("invertLookDirectionOnWallJump");
@@ -75,6 +81,7 @@ public class WallJumpEditor : Editor
 	{
 		serializedObject.Update();
 		EditorGUI.BeginChangeCheck();
+<<<<<<< HEAD
         EditorGUILayout.BeginHorizontal(UIHelper.mainStyle);
         {
 			toolBarTab = GUILayout.Toolbar(toolBarTab, new string[] { "Wall Jump", "Synergies", "Collision", "FX", "Animation" }, GUILayout.MinHeight(25));
@@ -94,6 +101,11 @@ public class WallJumpEditor : Editor
 			}
         }
         EditorGUILayout.EndHorizontal();
+=======
+
+		toolBarTab = GUILayout.Toolbar(toolBarTab, new string[] { "Wall Jump", "Synergies", "Collision", "FX", "Animation" });
+		EditorGUILayout.Space();
+>>>>>>> 37005662f71bdd2aced01a8b1c397c3ba93390f9
 
 		currentTab = toolBarTab switch
 		{

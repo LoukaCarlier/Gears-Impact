@@ -9,7 +9,10 @@ public class CustomGravityEditor : Editor
 	private string currentTab;
 
 	private SerializedProperty baseGravityForce;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 37005662f71bdd2aced01a8b1c397c3ba93390f9
 	private SerializedProperty secondaryGravityForce;
 	private SerializedProperty maxVelocity;
 
@@ -121,7 +124,10 @@ public class CustomGravityEditor : Editor
 							
 							EditorGUILayout.PropertyField(instantGravityChangeOnInput);
 							EditorGUILayout.PropertyField(invertJumpingDirection);
+<<<<<<< HEAD
 							EditorGUILayout.PropertyField(invertAnimationType);
+=======
+>>>>>>> 37005662f71bdd2aced01a8b1c397c3ba93390f9
 						}
 						EditorGUILayout.EndVertical();
 					}

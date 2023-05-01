@@ -45,9 +45,15 @@ public class Jumper : MonoBehaviour
 
 	//[Header("FX")]
 	[Tooltip("Visual/Sound FX Instantiated on jump")]
+<<<<<<< HEAD
     [SerializeField] private GameObject jumpFX = null;
 	[Tooltip("Visual/Sound FX Instantiated on air jump")]
     [SerializeField] private GameObject airJumpFX = null;
+=======
+	public GameObject jumpFX = null;
+	[Tooltip("Visual/Sound FX Instantiated on air jump")]
+	public GameObject airJumpFX = null;
+>>>>>>> 37005662f71bdd2aced01a8b1c397c3ba93390f9
 	[Tooltip("Offset from the pivot when Instantiating FX")]
 	[SerializeField] private Vector3 fxOffset = Vector3.zero;
 	[Tooltip("Lifetime of the Instantiated FX. 0 = Do not destroy")]
